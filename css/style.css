@@ -1,0 +1,33 @@
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 35px;
+}
+
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-description {
+  color: #838383;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.social-link {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
