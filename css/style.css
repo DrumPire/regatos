@@ -48,6 +48,10 @@ a {
           justify-content: space-between;
 }
 
+.contacts-link:hover {
+  text-decoration: underline;
+}
+
 .contacts-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +64,7 @@ a {
 .contacts-title {
   display: block;
   color: #303030;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 24px;
 }
@@ -99,6 +103,10 @@ a {
   font-weight: 400;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #4f8dff;
 }
 
 .hero {

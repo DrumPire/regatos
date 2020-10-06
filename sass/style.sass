@@ -25,13 +25,15 @@ a
   display: flex
   align-items: center
   justify-content: space-between
+  &-link:hover
+    text-decoration: underline
   &-list 
     display: flex
     justify-content: space-between
   &-title
     display: block
     color: #303030
-    font-size: 16px
+    font-size: 20px
     font-weight: 500
     line-height: 24px
   &-text 
@@ -60,6 +62,8 @@ a
   font-weight: 400
   text-transform: uppercase
   cursor: pointer
+  &:hover
+    background-color: lighten(#357cff, 5%)
 .hero
   margin-top: 40px
 .menu
