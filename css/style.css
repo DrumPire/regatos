@@ -1,3 +1,59 @@
+@font-face {
+  font-family: 'Gilroy-Black';
+  src: url("../fonts/Gilroy/Gilroy-Black.ttf");
+  src: url("../fonts/Gilroy/Gilroy-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url("../fonts/Gilroy/Gilroy-Bold.ttf");
+  src: url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: url("../fonts/Gilroy/Gilroy-SemiBold.ttf");
+  src: url("../fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url("../fonts/Gilroy/Gilroy-Medium.ttf");
+  src: url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url("../fonts/Gilroy/Gilroy-Regular.ttf");
+  src: url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url("../fonts/Gilroy/Gilroy-ExtraBold.otf");
+  src: url("../fonts/Gilroy/Gilroy-ExtraBold.otf") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url("../fonts/Gilroy/Gilroy-Light.otf");
+  src: url("../fonts/Gilroy/Gilroy-Light.otf") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
   color: #303030;
@@ -32,14 +88,79 @@ a {
   line-height: 20px;
 }
 
-.social-link {
-  margin-left: 20px;
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.social img:hover {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.social-fb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #dfe4ee;
+  border-radius: 25px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.social-fb:hover {
+  border-color: #3b5998;
+}
+
+.social-instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #dfe4ee;
+  border-radius: 25px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.social-instagram:hover {
+  border-color: #bc7ac4;
+}
+
+.social-telegram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #dfe4ee;
   border-radius: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.social-telegram:hover {
+  border-color: #34ace1;
 }
 
 .contacts {
@@ -112,7 +233,7 @@ a {
 }
 
 .btn:hover {
-  background-color: #4f8dff;
+  background-color: #2656ae;
 }
 
 .hero {
@@ -121,6 +242,10 @@ a {
 
 .menu {
   padding-top: 50px;
+}
+
+.burger {
+  display: none;
 }
 
 .nav {
@@ -141,5 +266,9 @@ a {
   font-weight: 500;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.nav-list a:hover {
+  color: #a6a6a6;
 }
 /*# sourceMappingURL=style.css.map */

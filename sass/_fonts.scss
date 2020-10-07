@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Gilroy-Black';
+  src: url('../fonts/Gilroy/Gilroy-Black.ttf');
+  src: url('../fonts/Gilroy/Gilroy-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../fonts/Gilroy/Gilroy-Bold.ttf');
+  src: url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: url('../fonts/Gilroy/Gilroy-SemiBold.ttf');
+  src: url('../fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('../fonts/Gilroy/Gilroy-Medium.ttf');
+  src: url('../fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../fonts/Gilroy/Gilroy-Regular.ttf');
+  src: url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('../fonts/Gilroy/Gilroy-ExtraBold.otf');
+  src: url('../fonts/Gilroy/Gilroy-ExtraBold.otf') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+  }
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('../fonts/Gilroy/Gilroy-Light.otf');
+  src: url('../fonts/Gilroy/Gilroy-Light.otf') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+  }
+@mixin black {
+  font-family: 'Gilroy-Black', sans-serif;
+  font-weight: 400;
+}
+@mixin bold {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-weight: 400;
+}
+@mixin semi {
+  font-family: 'Gilroy-SemiBold', sans-serif;
+  font-weight: 400;
+}
+@mixin medium {
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-weight: 400;
+}
+@mixin extra {
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+  font-weight: 400;
+}
+@mixin light {
+  font-family: 'Gilroy-Light', sans-serif;
+  font-weight: 400;
+}
