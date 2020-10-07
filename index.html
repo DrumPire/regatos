@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/swiper-bundle.min.js" defer></script>
   <script src="js/script.js" defer></script>
   <title>Regatos</title>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
+  <header class="header">
+    <div class="container">
       <div class="header-wrap">
         <span class="header-description">Горящие туры. Авиакассы. Визовый сервис. Страхование.</span>
         <div class="social">
@@ -50,8 +52,8 @@
           <button class="btn">задать вопрос</button>
         </div>
         <nav class="menu">
+          <img src="img/hero/burger.png" alt="menu" class="burger">
           <ul class="nav">
-            <img src="img/hero/burger.png" alt="menu" class="burger">
             <li  class="nav-list">
               <a href="#">авиабилеты</a>
             </li>
@@ -78,12 +80,66 @@
             </li>
           </ul>
         </nav>
-        <!-- Здесь будет слайдер -->
+
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="hero-slider">
+                  <div class="slider-description">
+                    <h1 class="slider-title">Грузинский колорит.  Вино и хачапури.</h1>
+                    <p class="slider-text">
+                      Важко уявити Грузію без вина. Якби Грузія була людиною, то вино для неї було б – як серце, 
+                      без якого неможливе життя – гаряче, сильне та палке.
+                    </p>
+                    <button class="btn">узнать подробнее</button>
+                  </div>
+                  <!-- /.slider-description -->
+                  <div class="slider-img">
+                    <img src="img/hero/slide-one.jpg" alt="Грузинская кухня">
+                  </div>
+                  <!-- /.slider-img -->
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero-slider">
+                  <div class="slider-description">
+                    <h1 class="slider-title">Грузинский колорит.  Вино и хачапури.</h1>
+                    <p class="slider-text">
+                      Важко уявити Грузію без вина. Якби Грузія була людиною, то вино для неї було б – як серце, 
+                      без якого неможливе життя – гаряче, сильне та палке.
+                    </p>
+                    <button class="btn">узнать подробнее</button>
+                  </div>
+                  <!-- /.slider-description -->
+                  <div class="slider-img">
+                    <img src="img/hero/slide-two.jpg" alt="Грузинская кухня">
+                  </div>
+                  <!-- /.slider-img -->
+                  </div>
+              </div>
+              <!-- <div class="swiper-slide">Slide 3</div> -->
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+
+          <!-- If we need navigation buttons -->
+          <button class="slider-prev"><img src="img/hero/arrow-left.png" alt="prev"></button>
+          <button class="slider-next"><img src="img/hero/arrow-right.png" alt="prev"></button>
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+        
+        <!-- /.hero-slider -->
       </div>
       <!-- /.hero -->
-    </header>
+    </div>
+    <!-- /.container -->
+  </header>
     <!-- /.header -->
-  </div>
-  <!-- /.container -->
 </body>
 </html>

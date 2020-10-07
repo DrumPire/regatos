@@ -106,6 +106,60 @@ a
     background-color: #2656ae
 .hero
   margin-top: 40px
+  &-slider
+    display: flex
+    align-items: center
+    margin-top: 49px
+    padding-bottom: 45px
+.slider
+  &-title
+    color: #303030
+    +black
+    font-size: 48px
+    line-height: 60px
+    position: relative
+    margin-bottom: 50px
+    &::before
+      content: ''
+      width: 40px
+      height: 5px
+      background-color: #ffc445
+      position: absolute
+      top: -44px
+  &-text 
+    color: #303030
+    font-size: 16px
+    +reg
+    line-height: 30px
+    margin-bottom: 47px
+  &-prev
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    width: 70px
+    height: 70px
+    background-color: #000000
+    opacity: 0.5
+    right: 70px
+    bottom: 43px
+    border: none
+    z-index: 5
+  &-next 
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    width: 70px
+    height: 70px
+    background-color: #000000
+    opacity: 0.5
+    right: 0
+    bottom: 43px
+    border: none
+    z-index: 5
+  &-description
+    padding-right: 10px
 .menu
   padding-top: 50px
 .burger
