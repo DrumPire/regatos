@@ -258,6 +258,10 @@ a {
   padding-bottom: 45px;
 }
 
+.slider-img {
+  position: relative;
+}
+
 .slider-title {
   color: #303030;
   font-family: 'Gilroy-Black', sans-serif;
@@ -363,5 +367,33 @@ a {
 
 .nav-list a:hover {
   color: #a6a6a6;
+}
+
+.image {
+  max-width: 953px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1439px) {
+  .contacts-title {
+    font-size: 16px;
+  }
+  .contacts-text {
+    font-size: 14px;
+  }
+  .list {
+    margin-right: 50px;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 15px 45px;
+  }
+  .nav-list {
+    font-size: 16px;
+  }
+  .slider-title {
+    font-size: 45px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
