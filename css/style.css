@@ -344,6 +344,33 @@ a {
   display: none;
 }
 
+.mobile-menu {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14pxgit;
+}
+
+.mobile-holder {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 50%;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 300ms ease-in-out 100ms;
+  transition: -webkit-transform 300ms ease-in-out 100ms;
+  transition: transform 300ms ease-in-out 100ms;
+  transition: transform 300ms ease-in-out 100ms, -webkit-transform 300ms ease-in-out 100ms;
+}
+
+.opened {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,6 +409,14 @@ a {
 
 .news-slider {
   width: 50%;
+}
+
+.news-prev, .news-next {
+  width: 70px;
+  height: 70px;
+  background-color: #e7ecf3;
+  cursor: pointer;
+  border: none;
 }
 
 .news-wrap {
@@ -485,6 +520,13 @@ a {
   line-height: 48px;
 }
 
+.coments-text::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #e7ecf3;
+}
+
 .coments-link {
   color: #357cff;
   font-size: 12px;
@@ -505,6 +547,22 @@ a {
   line-height: 24px;
   text-transform: uppercase;
   margin-right: 35px;
+}
+
+.number:hover {
+  color: #333333;
+}
+
+.slider-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1439px) {
@@ -574,13 +632,8 @@ a {
 }
 
 @media (max-width: 1054px) {
-  .nav {
-    display: none;
-    padding: 0;
-  }
-  .burger {
-    display: block;
-    padding: 0 15px;
+  .nav-list {
+    font-size: 12px;
   }
   .logo {
     max-width: 180px;
@@ -619,6 +672,16 @@ a {
   }
   .header-description {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+    padding: 0 15px;
   }
 }
 

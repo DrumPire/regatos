@@ -50,11 +50,8 @@
     margin-right: 20px
 @media (max-width: 1054px)
   .nav
-    display: none
-    padding: 0
-  .burger
-    display: block
-    padding: 0 15px
+    &-list
+      font-size: 12px
   .logo
     max-width: 180px
     width: 100%
@@ -86,6 +83,12 @@
   .header
     &-description
       font-size: 12px
+@media (max-width: 1024px)
+  .nav
+    display: none
+  .burger
+    display: block
+    padding: 0 15px
 @media (max-width: 890px) 
   .logo
     max-width: 150px
