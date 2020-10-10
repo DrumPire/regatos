@@ -12,3 +12,12 @@ var mySwiper = new Swiper('.swiper-container', {
     prevEl: '.slider-prev',
   },
 });
+var mySwiper = new Swiper('.swiper-container-reviews', {
+  navigation: {
+    nextEl: '.news-next',
+    prevEl: '.news-prev',
+  },
+});
+
+
+

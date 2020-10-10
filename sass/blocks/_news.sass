@@ -2,7 +2,6 @@
   padding-top: 50px
   padding-bottom: 80px
   &-slider
-    width: 50%
   &-prev, &-next 
     width: 70px
     height: 70px
@@ -47,6 +46,9 @@
   line-height: 24px
   margin-bottom: 19px
 .btn
+  &-group
+    display: flex
+    justify-content: space-between
   &-news
     border: none
     border-radius: 3px
@@ -56,7 +58,14 @@
     +black
     font-size: 14px
     text-transform: uppercase
-    cursor: 
+    cursor: pointer
+    margin-top: 70px
+    &:first-child
+      background-color: #357cff
+      color: #ffffff
+      &:hover
+        background-color: #2656ae
+        opacity: 1
     &:hover
       opacity: 0.7
 .review
@@ -96,7 +105,7 @@
   line-height: 24px
   text-transform: uppercase
   margin-right: 35px
-  cursor: 
+  cursor: pointer
   &:hover
     color: #333333
 .slider
@@ -104,3 +113,7 @@
     display: flex
     align-items: center
     justify-content: space-between
+.reviews
+  &-con
+    width: 50%
+    overflow: hidden
