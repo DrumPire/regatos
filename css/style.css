@@ -642,6 +642,77 @@ a {
   overflow: hidden;
 }
 
+.helps {
+  background-image: url(../img/helps/bg.png);
+  padding-top: 64px;
+  padding-bottom: 104px;
+}
+
+.helps-title {
+  color: #ffffff;
+  font-family: 'Gilroy-Black', sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.questions {
+  display: block;
+  color: #ffffff;
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+.form {
+  margin-top: 23px;
+}
+
+.form-btn {
+  padding: 20px 78px;
+  color: #303030;
+  font-family: 'Gilroy-Black', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: #ffc445;
+}
+
+.form-btn:hover {
+  background-color: #ffbc2c;
+}
+
+.input {
+  max-width: 345px;
+  width: 100%;
+  padding: 19px 0;
+  margin-right: 20px;
+  color: #303030;
+  font-family: 'Gilroy-SemiBold', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  border: none;
+}
+
+.input-name {
+  background-image: url(../img/helps/user.png);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+  padding-left: 44px;
+}
+
+.input-phone {
+  background-image: url(../img/helps/phone.png);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+  padding-left: 44px;
+}
+
 @media (max-width: 1439px) {
   .contacts-title {
     font-size: 16px;
@@ -744,6 +815,18 @@ a {
   .dekor-img {
     margin-top: 15px;
   }
+  .helps-wrap {
+    padding: 0 15px;
+  }
+  .helps-title {
+    font-size: 45px;
+  }
+  .questions {
+    font-size: 30px;
+  }
+  .input {
+    max-width: 320px;
+  }
 }
 
 @media (max-width: 1054px) {
@@ -787,6 +870,10 @@ a {
   }
   .header-description {
     font-size: 12px;
+  }
+  .form-btn {
+    display: block;
+    margin-top: 20px;
   }
 }
 
@@ -849,6 +936,25 @@ a {
     width: 100%;
     margin-top: 50px;
   }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .form-btn {
+    max-width: 365px;
+    width: 100%;
+  }
+  .input {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -886,6 +992,24 @@ a {
   }
   .info-img {
     display: none;
+  }
+  .helps-title {
+    font-size: 24px;
+  }
+  .questions {
+    font-size: 18px;
+  }
+  .form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form-btn {
+    max-width: 300px;
+  }
+  .input {
+    max-width: 250px;
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
