@@ -17,6 +17,10 @@ var mySwiper = new Swiper('.swiper-container-reviews', {
     nextEl: '.news-next',
     prevEl: '.news-prev',
   },
+  // pagination: {
+  //   el: '.news-pagination',
+  //   bulletClass: 'news-pagination-number',
+  // },
 });
 
 

@@ -1,7 +1,36 @@
 .news
   padding-top: 50px
   padding-bottom: 80px
-  &-slider
+  &-pagination
+    &-number
+      display: inline-block
+      color: #357cff
+      font-size: 16px
+      +black
+      line-height: 24px
+      text-transform: uppercase
+      margin-right: 35px
+      cursor: pointer
+      &:first-child
+        margin-right: 14px
+      &:hover
+        color: #333333
+      &_active
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        color: #357cff
+        font-size: 16px
+        +black
+        line-height: 24px
+        text-transform: uppercase
+        margin-right: 14px
+        cursor: pointer
+        width: 42px
+        height: 42px
+        border-radius: 50%
+        box-shadow: 0 5px 21px rgba(46, 54, 64, 0.24)
+        background-color: #ffffff
   &-prev, &-next 
     width: 70px
     height: 70px
@@ -26,11 +55,16 @@
     margin-top: 19px
 .info
   display: flex
+  border-radius: 3px
+  border: 1px solid #f2f6f7
+  margin-bottom: 20px
   &-wrap
-    width: 50%
+    width: 60%
     padding-right: 140px
   &-img
     margin-right: 25px
+    margin-top: 30px
+    margin-left: 30px
     margin-bottom: 80px
   &-title
     color: #303030
@@ -44,11 +78,14 @@
   font-size: 14px
   font-weight: 400
   line-height: 24px
+  display: block
+  margin-top: 30px
   margin-bottom: 19px
 .btn
   &-group
     display: flex
     justify-content: space-between
+    margin-top: 75px
   &-news
     border: none
     border-radius: 3px
@@ -59,7 +96,7 @@
     font-size: 14px
     text-transform: uppercase
     cursor: pointer
-    margin-top: 70px
+    margin-top: 40px
     &:first-child
       background-color: #357cff
       color: #ffffff
@@ -115,5 +152,6 @@
     justify-content: space-between
 .reviews
   &-con
-    width: 50%
+    width: 40%
     overflow: hidden
+  
