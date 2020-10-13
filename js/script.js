@@ -17,10 +17,15 @@ var mySwiper = new Swiper('.swiper-container-reviews', {
     nextEl: '.news-next',
     prevEl: '.news-prev',
   },
-  // pagination: {
-  //   el: '.news-pagination',
-  //   bulletClass: 'news-pagination-number',
-  // },
+  pagination: {
+    el: '.news-pagination',
+    clickable: true,
+    renderBullet: function (index, activeClassName) {
+      return `<span class="news-pagination-number ${activeClassName}">${
+        index + 1
+      }</span>`;
+    },
+  },
 });
 
 
