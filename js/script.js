@@ -1,8 +1,14 @@
 const burgerButton = document.querySelector('.burger');
+const mobile = document.querySelector('.mobile');
+const mobileClose = document.querySelector('.mobile-close');
 
 
 burgerButton.addEventListener('click', () => {
-  console.log('click');
+  mobile.classList.add('open');
+});
+
+mobileClose.addEventListener('click', () => {
+  mobile.classList.remove('open');
 });
 
 
