@@ -54,6 +54,11 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: #303030;
@@ -231,12 +236,15 @@ a {
   background-color: #357cff;
   border: none;
   padding: 20px 55px;
+  cursor: pointer;
+}
+
+.btn a {
   color: #ffffff;
   font-size: 14px;
   font-family: 'Gilroy-Black', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  cursor: pointer;
 }
 
 .btn:hover {
@@ -528,6 +536,10 @@ a {
   margin-bottom: 19px;
 }
 
+.btn-news.first a {
+  color: #ffffff;
+}
+
 .btn-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -542,19 +554,21 @@ a {
   border: none;
   border-radius: 3px;
   border: 1px solid #357cff;
-  color: #357cff;
   padding: 20px 47px;
-  font-family: 'Gilroy-Black', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  text-transform: uppercase;
   cursor: pointer;
   margin-top: 40px;
 }
 
+.btn-news a {
+  color: #357cff;
+  font-family: 'Gilroy-Black', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 .btn-news:first-child {
   background-color: #357cff;
-  color: #ffffff;
 }
 
 .btn-news:first-child:hover {
@@ -676,7 +690,6 @@ a {
 
 .form-btn {
   padding: 20px 78px;
-  color: #303030;
   font-family: 'Gilroy-Black', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -685,6 +698,10 @@ a {
   border: none;
   border-radius: 3px;
   background-color: #ffc445;
+}
+
+.form-btn a {
+  color: #303030;
 }
 
 .form-btn:hover {
@@ -795,6 +812,163 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 48px;
+}
+
+.main {
+  padding-top: 49px;
+}
+
+.main-container {
+  max-width: 1063px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.main-head .info-title {
+  margin-bottom: 35px;
+}
+
+.main-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-img {
+  margin-right: 18px;
+}
+
+.main-data {
+  display: block;
+  margin-bottom: 13px;
+  color: #838383;
+  font-family: 'Gilroy-SemiBold', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.main-title {
+  color: #2c2c2c;
+  font-family: 'Gilroy-Black', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.main-text {
+  margin-top: 27px;
+  color: #838383;
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+.main-text .coments-link {
+  margin-top: 32px;
+}
+
+.main-reviews {
+  color: #303030;
+  font-family: 'Gilroy-SemiBold', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.main::before {
+  content: '';
+  height: 1px;
+  background-color: #e7ecf3;
+  display: block;
+  margin-bottom: 49px;
+}
+
+.main-description {
+  color: #838383;
+  font-family: 'Gilroy-SemiBold', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.main-description::after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: #dcdcdc;
+  display: inline-block;
+  margin: 4px 10px;
+}
+
+.main-form {
+  max-width: 650px;
+}
+
+.main-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .slider-btn {
+  margin-bottom: 60px;
+}
+
+.swiper-container-coments {
+  overflow: hidden;
+}
+
+.input-review {
+  border-radius: 3px;
+  border: 1px solid #dcdcdc;
+  background-color: #ffffff;
+  padding: 19px 44px;
+  max-width: 315px;
+  width: 100%;
+}
+
+.input-mail {
+  background-image: url(../img/reviews/mail.png);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+  padding-left: 44px;
+}
+
+.input-text {
+  background-image: url(../img/reviews/text.png);
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+  padding-left: 44px;
+  border-radius: 3px;
+  border: 1px solid #dcdcdc;
+  background-color: #ffffff;
+  max-width: 650px;
+  margin-top: 20px;
+  min-height: 131px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1439px) {

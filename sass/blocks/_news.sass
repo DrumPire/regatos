@@ -15,6 +15,7 @@
         margin-right: 14px
       &:hover
         color: #333333
+
   &-prev, &-next 
     width: 70px
     height: 70px
@@ -85,24 +86,28 @@
   margin-top: 30px
   margin-bottom: 19px
 .btn
+  &-news.first 
+    a 
+      color: #ffffff
+.btn
   &-group
     display: flex
     justify-content: space-between
     margin-top: 75px
   &-news
+    a 
+      color: #357cff
+      +black
+      font-size: 14px
+      text-transform: uppercase
     border: none
     border-radius: 3px
     border: 1px solid #357cff
-    color: #357cff
     padding: 20px 47px
-    +black
-    font-size: 14px
-    text-transform: uppercase
     cursor: pointer
     margin-top: 40px
     &:first-child
       background-color: #357cff
-      color: #ffffff
       &:hover
         background-color: #2656ae
         opacity: 1
