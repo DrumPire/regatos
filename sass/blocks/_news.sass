@@ -1,7 +1,8 @@
+button
+  padding: 0
 .swiper-pagination-bullet
   width: 42px
   height: 42px 
-  // display: inline-block
   border-radius: 100% 
   background: none 
   opacity: 1
@@ -20,25 +21,21 @@
   padding-bottom: 80px
   &-pagination
     &-number
-      // display: inline-block
-      // color: #357cff
-      // font-size: 16px
-      // +black
-      // line-height: 24px
-      // text-transform: uppercase
-      // margin-right: 35px
-      // cursor: pointer
       &:first-child
         margin-right: 14px
       &:hover
         color: #333333
-
+  &-btn 
+    display: flex
   &-prev, &-next 
     width: 70px
     height: 70px
     background-color: #e7ecf3
     cursor: pointer
     border: none
+    opacity: 0.5
+    &:hover
+      opacity: 1
   &-wrap
     display: flex
     justify-content: space-between

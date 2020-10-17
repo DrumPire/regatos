@@ -413,6 +413,10 @@ a {
   margin-top: 49px;
 }
 
+button {
+  padding: 0;
+}
+
 .swiper-pagination-bullet {
   width: 42px;
   height: 42px;
@@ -451,12 +455,23 @@ a {
   color: #333333;
 }
 
+.news-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .news-prev, .news-next {
   width: 70px;
   height: 70px;
   background-color: #e7ecf3;
   cursor: pointer;
   border: none;
+  opacity: 0.5;
+}
+
+.news-prev:hover, .news-next:hover {
+  opacity: 1;
 }
 
 .news-wrap {
