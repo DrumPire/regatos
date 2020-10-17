@@ -1,16 +1,33 @@
+.swiper-pagination-bullet
+  width: 42px
+  height: 42px 
+  // display: inline-block
+  border-radius: 100% 
+  background: none 
+  opacity: 1
+  color: #357cff
+  font-size: 16px
+  +black
+  line-height: 24px
+  text-transform: uppercase
+  margin-right: 14px
+  cursor: pointer
+  display: inline-flex
+  align-items: center
+  justify-content: center
 .news
   padding-top: 50px
   padding-bottom: 80px
   &-pagination
     &-number
-      display: inline-block
-      color: #357cff
-      font-size: 16px
-      +black
-      line-height: 24px
-      text-transform: uppercase
-      margin-right: 35px
-      cursor: pointer
+      // display: inline-block
+      // color: #357cff
+      // font-size: 16px
+      // +black
+      // line-height: 24px
+      // text-transform: uppercase
+      // margin-right: 35px
+      // cursor: pointer
       &:first-child
         margin-right: 14px
       &:hover
@@ -63,8 +80,7 @@
   border: 1px solid #f2f6f7
   margin-bottom: 20px
   &-wrap
-    width: 60%
-    padding-right: 140px
+    width: 50%
   &-img
     margin-right: 25px
     margin-top: 30px
@@ -163,6 +179,9 @@
     justify-content: space-between
 .reviews
   &-con
-    width: 40%
-    overflow: hidden
-  
+    width: 50%
+    padding-left: 140px
+.swiper
+  &-container
+    &-reviews 
+      overflow: hidden

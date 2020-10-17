@@ -253,6 +253,7 @@ a {
 
 .hero {
   margin-top: 40px;
+  margin-bottom: 45px;
 }
 
 .hero-slider {
@@ -262,12 +263,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 49px;
-  padding-bottom: 45px;
 }
 
 .slider-img {
-  position: relative;
+  width: 66.1%;
 }
 
 .slider-title {
@@ -314,7 +313,7 @@ a {
   background-color: #000000;
   opacity: 0.5;
   right: 70px;
-  bottom: 43px;
+  bottom: 0;
   border: none;
   z-index: 5;
 }
@@ -335,13 +334,14 @@ a {
   background-color: #000000;
   opacity: 0.5;
   right: 0;
-  bottom: 43px;
+  bottom: 0;
   border: none;
   z-index: 5;
 }
 
 .slider-description {
   padding-right: 10px;
+  width: 33.9%;
 }
 
 .menu {
@@ -409,21 +409,38 @@ a {
   height: auto;
 }
 
-.news {
-  padding-top: 50px;
-  padding-bottom: 80px;
+.swiper-container {
+  margin-top: 49px;
 }
 
-.news-pagination-number {
-  display: inline-block;
+.swiper-pagination-bullet {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  background: none;
+  opacity: 1;
   color: #357cff;
   font-size: 16px;
   font-family: 'Gilroy-Black', sans-serif;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
-  margin-right: 35px;
+  margin-right: 14px;
   cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news {
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 .news-pagination-number:first-child {
@@ -505,8 +522,7 @@ a {
 }
 
 .info-wrap {
-  width: 60%;
-  padding-right: 140px;
+  width: 50%;
 }
 
 .info-img {
@@ -656,7 +672,11 @@ a {
 }
 
 .reviews-con {
-  width: 40%;
+  width: 50%;
+  padding-left: 140px;
+}
+
+.swiper-container-reviews {
   overflow: hidden;
 }
 
