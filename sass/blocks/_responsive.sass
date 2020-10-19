@@ -16,11 +16,11 @@
     &-title
       font-size: 45px
 @media (max-width: 1320px)
-  .slider
-    &-prev
-      bottom: 50px
-    &-next 
-      bottom: 50px
+  // .slider
+  //   &-prev
+  //     bottom: 50px
+  //   &-next 
+  //     bottom: 50px
   .info
     &-title
       font-size: 38px
@@ -43,11 +43,16 @@
       padding: 0 15px
 @media (max-width: 1264px)
   .slider
+    &-title
+      font-size: 36px
+      line-height: inherit
+      margin-bottom: 20px
+    &-text 
+      line-height: inherit
+      margin-bottom: 20px
     &-prev
-      bottom: 19px
       right: 85px
     &-next 
-      bottom: 19px
       right: 15px
   .header
     &-wrap
@@ -62,6 +67,8 @@
       font-size: 14px
     &-text 
       font-size: 12px
+  .location 
+    font-size: 12px
   .nav
     padding: 0 15px
     &-list
@@ -156,12 +163,15 @@
   .coments
     &-text
       font-size: 14px
+    
   .news
     &-pagination
       &-number
         margin-right: 14px
-      
-@media (max-width: 890px) 
+  .contacts
+    .btn a 
+      font-size: 12px    
+@media (max-width: 890px)
   .main
     &-text
       font-size: 16px
@@ -202,7 +212,8 @@
       padding-right: 0
     &-title
       margin-bottom: 15px
-  .btn
+  .btn a
+    font-size: 12px
     &-news
       font-size: 10px
   .reviews
@@ -228,6 +239,14 @@
     &-logo
       flex-wrap: wrap
 @media (max-width: 640px)
+  .hero
+    &-slider
+      flex-direction: column
+  .nav  
+    &-list
+      font-size: 10px
+  .mobile
+    width: 12rem
   .image
     display: none
   .header
@@ -241,6 +260,14 @@
     margin-top: 20px
     display: block
     margin: 0 auto
+    a 
+      font-size: 10px
+    &-news a 
+      font-size: 10px
+  .btn
+    &-news.first 
+      a 
+        font-size: 10px
   .logo
     margin-bottom: 20px
   .slider
@@ -248,6 +275,8 @@
       text-align: center
     &-text 
       text-align: center
+    &-description
+      width: 100%
   .info
     &-img
       display: none
@@ -259,9 +288,9 @@
   .questions
     font-size: 18px
   .form
-    align-items: center
+    align-items: flex-start
     &-btn 
-      max-width: 300px
+      max-width: 250px
   .input
     max-width: 250px
     margin-right: 0
@@ -277,6 +306,19 @@
   .footer
     &-wrap
       justify-content: space-around
+      flex-direction: column
+      align-items: center
+    &-description
+      display: flex
+      flex-direction: column
+      align-items: center
+    &-icon
+      justify-content: center
+    &-list
+      text-align: center
+  .nav
+    &-title
+      text-align: center
   .news
     &-pagination
       display: none
@@ -293,3 +335,9 @@
       font-size: 14px
   .private
     font-size: 10px
+  .swiper
+    &-slide
+      width: 100%
+  .reviews
+    &-con
+      padding-left: 0
