@@ -2,6 +2,10 @@ const burgerButton = document.querySelector('.burger');
 const mobile = document.querySelector('.mobile');
 const mobileClose = document.querySelector('.mobile-close');
 const overlay = document.querySelector('.overlay');
+const openModal = document.querySelector('#modal');
+const modal = document.querySelector('.modal');
+const closeModal = document.querySelector('.modal-close')
+
 
 
 burgerButton.addEventListener('click', () => {
@@ -19,6 +23,20 @@ overlay.addEventListener('click', () => {
   overlay.classList.remove('active');
 })
 
+openModal.addEventListener('click', () => {
+  modal.classList.add('modal-open');
+  modal.classList.add('active');
+})
+
+closeModal.addEventListener('click', () => {
+  modal.classList.remove('modal-open');
+  modal.classList.remove('active');
+})
+
+modal.addEventListener('click', () => {
+  modal.classList.remove('modal-open');
+  modal.classList.remove('active');
+})
 
 var mySwiper = new Swiper('.swiper-container', {
   navigation: {

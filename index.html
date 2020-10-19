@@ -49,7 +49,7 @@
               <span class="contacts-text">телефон для консультаций</span>
             </div>
           </div>
-          <button class="btn"><a href="#">задать вопрос</a></button>
+          <button class="btn" id="modal"><a href="#">задать вопрос</a></button>
         </div>
         <nav class="menu">
           <img src="img/hero/burger.png" alt="menu" class="burger">
@@ -393,6 +393,28 @@
     <!-- /.container -->
   </footer>
   <div class="overlay"></div>
+  <div class="modal">
+    <div class="modal-dialog">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">Возникли вопросы?</h2>
+      <p class="modal-text">
+        Хотите получить детальную консультацию по возникшему у Вас вопросу? Заполните форму обратной связи и наш менеджер 
+        свяжется с Вами в ближайшее время!
+      </p>
+      <form action="#" class="main-form">
+        <div class="main-inputs">
+          <input type="text" class="input-review input-name" placeholder="Как вас зовут?">
+          <input type="text" class="input-review input-mail" placeholder="Контактный email">
+        </div>
+        <input type="text" class="input-text" placeholder="Текст отзыва">
+      </form>
+      <div class="chek-wrap">
+        <input class="chek-box" type="checkbox">
+        <span class="private">Даю согласие на обработку персональных данных</span>
+      </div>
+      <div class="modal-bottom"><button class="modal-btn"><a href="#">отправить</a></button></div>
+    </div>
+  </div>
   <!-- /.footer -->
 </body>
 </html>
