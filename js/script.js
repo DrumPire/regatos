@@ -3,6 +3,7 @@ const mobile = document.querySelector('.mobile');
 const mobileClose = document.querySelector('.mobile-close');
 const overlay = document.querySelector('.overlay');
 const openModal = document.querySelector('#modal');
+const openFooterModal = document.querySelector('#footer-modal');
 const modal = document.querySelector('.modal');
 const closeModal = document.querySelector('.modal-close');
 const scrolling = document.querySelector('.scrolling');
@@ -30,10 +31,16 @@ openModal.addEventListener('click', () => {
   body.classList.add('scrolling');
 })
 
+openFooterModal.addEventListener('click', () => {
+  modal.classList.add('modal-open');
+  body.classList.add('scrolling');
+})
+
 closeModal.addEventListener('click', () => {
   modal.classList.remove('modal-open');
   body.classList.remove('scrolling');
 })
+
 
 var mySwiper = new Swiper('.swiper-container', {
   navigation: {

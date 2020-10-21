@@ -30,7 +30,7 @@
             <div class="list location-title">
               <span class="contacts-title">
                 <img src="img/hero/shape.png" alt="shape" class="contacts-icon">
-                Херсон
+                <a href="#" class="contacts-link">Херсон</a>
               </span>
               <span class="location">проспект Ушакова 71/А</span>
             </div>
@@ -207,7 +207,7 @@
                         <span class="data">27.03.2019</span>
                         <h3 class="news-title">Николай</h3>
                       </div>
-                      <div class="dekor-img"><img src="img/news/elem.png" alt="photo"></div>
+                      <div class="dekor-img"><img src="img/news/elem.png" alt="photo" class="elem"></div>
                     </div>
                     <p class="coments-text">
                       Агентство по охране окружающей среды Исландии продлило закрытие каньона Fjaðrárgljúfur 
@@ -223,7 +223,7 @@
                         <span class="data">27.03.2019</span>
                         <h3 class="news-title">Анатолий</h3>
                       </div>
-                      <div class="dekor-img"><img src="img/news/elem.png" alt="photo"></div>
+                      <div class="dekor-img"><img src="img/news/elem.png" alt="photo" class="elem"></div>
                     </div>
                     <p class="coments-text">
                       Агентство по охране окружающей среды Исландии продлило закрытие каньона Fjaðrárgljúfur 
@@ -239,7 +239,7 @@
                         <span class="data">27.03.2019</span>
                         <h3 class="news-title">Василий</h3>
                       </div>
-                      <div class="dekor-img"><img src="img/news/elem.png" alt="photo"></div>
+                      <div class="dekor-img"><img src="img/news/elem.png" alt="photo" class="elem"></div>
                     </div>
                     <p class="coments-text">
                       Агентство по охране окружающей среды Исландии продлило закрытие каньона Fjaðrárgljúfur 
@@ -255,7 +255,7 @@
                         <span class="data">27.03.2019</span>
                         <h3 class="news-title">Пётр</h3>
                       </div>
-                      <div class="dekor-img"><img src="img/news/elem.png" alt="photo"></div>
+                      <div class="dekor-img"><img src="img/news/elem.png" alt="photo" class="elem"></div>
                     </div>
                     <p class="coments-text">
                       Агентство по охране окружающей среды Исландии продлило закрытие каньона Fjaðrárgljúfur 
@@ -357,7 +357,7 @@
           <div class="footer-contacts_connection">
             <span class="contacts-title">
               <img src="img/hero/shape.png" alt="shape" class="contacts-icon">
-              Херсон
+              <a href="#" class="contacts-link">Херсон</a> 
             </span>
             <span class="location">проспект Ушакова 71/А</span>
           </div>
@@ -383,7 +383,7 @@
             <div class="social-telegram"><a href="#" class="social-link"><img src="img/telegram.png" alt=""></a></div>
             <div class="social-instagram"><a href="#" class="social-link"><img src="img/instagram.png" alt=""></a></div>
           </div>
-          <button class="btn"><a href="#">задать вопрос</a></button>
+          <button class="btn" id="footer-modal"><a href="#">задать вопрос</a></button>
         </div>
       </div>
       <!-- /.footer-wrap -->
@@ -406,8 +406,8 @@
         </div>
         <textarea wrap="hard" rows="10" cols="45" name="text" class="input-text" placeholder="Что конкретно Вас интересует?"></textarea>
         <div class="chek-wrap">
-          <input class="chek-box" type="checkbox">
-          <span class="private">Даю согласие на обработку персональных данных</span>
+          <input class="chek-box" id="chek-box" type="checkbox">
+          <label for="chek-box" class="private">Даю согласие на обработку персональных данных</label>
         </div>
       </form>
       

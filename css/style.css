@@ -876,6 +876,10 @@ button {
   line-height: 48px;
 }
 
+.list_item a:hover {
+  color: #a6a6a6;
+}
+
 textarea {
   resize: none;
   overflow: auto;
@@ -1172,6 +1176,10 @@ input {
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.modal-btn:hover {
+  background-color: #ffb412;
 }
 
 @media (max-width: 1439px) {
@@ -1570,6 +1578,9 @@ input {
   .btn-news.first a {
     font-size: 10px;
   }
+  .btn-group {
+    margin-top: 0;
+  }
   .logo {
     margin-bottom: 20px;
   }
@@ -1629,6 +1640,18 @@ input {
   }
   .list_item {
     line-height: 25px;
+  }
+  .news {
+    padding-bottom: 35px;
+    padding-top: 0;
+  }
+  .elem {
+    max-width: 40px;
+    width: 100%;
+    height: auto;
+  }
+  .contacts-text {
+    margin-left: 0;
   }
   .footer-wrap {
     -ms-flex-pack: distribute;
