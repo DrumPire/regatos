@@ -42,6 +42,9 @@
     &-container
       padding: 0 15px
 @media (max-width: 1264px)
+  .modal
+    &-dialog
+      top: 50px
   .slider
     &-title
       font-size: 36px
@@ -172,6 +175,23 @@
     .btn a 
       font-size: 12px    
 @media (max-width: 890px)
+  .modal
+    &-form 
+      margin: 0 auto
+      max-width: 650px
+      width: 100%
+      padding: 0 30px
+    &-dialog
+      max-width: 650px
+    &-bottom
+      max-width: 650px
+    &-title
+      font-size: 36px
+    &-text 
+      line-height: 20px
+    .input
+      &-review
+        max-width: 275px
   .main
     &-text
       font-size: 16px
@@ -238,7 +258,28 @@
   .sponsors
     &-logo
       flex-wrap: wrap
+@media (max-width: 680px)
+  .modal
+    &-dialog
+      max-width: 600px
 @media (max-width: 640px)
+  .modal
+    &-btn 
+      padding: 10px 50px
+      a 
+        font-size: 12px
+    &-title
+      font-size: 30px
+    &-text 
+      font-size: 14px
+      padding: 0 15px
+    &-form
+      max-width: 420px
+    &-dialog
+      width: 90%
+      .input
+        &-review
+          max-width: 640px
   .hero
     &-slider
       flex-direction: column
@@ -364,3 +405,16 @@
   .helps
     &-title
       text-align: center
+  .modal
+    &-btn 
+      a 
+        font-size: 10px
+    &-title
+      font-size: 20px
+    &-text 
+      font-size: 12px
+    &-close
+      top: 15px
+      right: 15px
+  .private
+    line-height: 10px
