@@ -1624,6 +1624,9 @@ input {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .list {
+    margin-bottom: 20px;
+  }
   .list_item {
     line-height: 25px;
   }
