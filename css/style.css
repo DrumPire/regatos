@@ -433,6 +433,10 @@ a {
   pointer-events: all;
 }
 
+.scrolling {
+  overflow-y: hidden;
+}
+
 button {
   padding: 0;
 }
@@ -868,6 +872,26 @@ button {
   line-height: 48px;
 }
 
+textarea {
+  resize: none;
+  overflow: auto;
+  padding: 19px 44px;
+  color: #303030;
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-weight: 300;
+  font-weight: 400;
+  font-size: 16px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+input {
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-weight: 300;
+  font-weight: 400;
+}
+
 .main {
   padding-top: 49px;
   padding-bottom: 100px;
@@ -1015,7 +1039,7 @@ button {
 .input-text {
   background-image: url(../img/reviews/text.png);
   background-repeat: no-repeat;
-  background-position: 20px 20px;
+  background-position: 15px 23px;
   padding-left: 44px;
   border-radius: 3px;
   border: 1px solid #dcdcdc;
@@ -1054,13 +1078,14 @@ button {
 }
 
 .modal {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+  z-index: 998;
 }
 
 .modal-dialog {
@@ -1076,6 +1101,10 @@ button {
   z-index: 999999;
 }
 
+.modal-dialog .chek-wrap {
+  margin-left: 30px;
+}
+
 .modal-open {
   display: block;
 }
@@ -1086,7 +1115,7 @@ button {
   border: none;
   background-color: #fff;
   position: absolute;
-  top: 10px;
+  top: 30px;
   right: 30px;
 }
 
@@ -1096,6 +1125,7 @@ button {
   font-weight: 400;
   font-size: 48px;
   text-align: center;
+  padding-top: 39px;
   margin-bottom: 29px;
 }
 
@@ -1107,7 +1137,13 @@ button {
   font-weight: 400;
   line-height: 30px;
   text-align: center;
+  padding: 0 78px;
   margin-bottom: 40px;
+}
+
+.modal-form {
+  margin: 0 auto;
+  max-width: 650px;
 }
 
 .modal-bottom {

@@ -4,7 +4,9 @@ const mobileClose = document.querySelector('.mobile-close');
 const overlay = document.querySelector('.overlay');
 const openModal = document.querySelector('#modal');
 const modal = document.querySelector('.modal');
-const closeModal = document.querySelector('.modal-close')
+const closeModal = document.querySelector('.modal-close');
+const scrolling = document.querySelector('.scrolling');
+const body = document.querySelector('body');
 
 
 
@@ -25,17 +27,12 @@ overlay.addEventListener('click', () => {
 
 openModal.addEventListener('click', () => {
   modal.classList.add('modal-open');
-  modal.classList.add('active');
+  body.classList.add('scrolling');
 })
 
 closeModal.addEventListener('click', () => {
   modal.classList.remove('modal-open');
-  modal.classList.remove('active');
-})
-
-modal.addEventListener('click', () => {
-  modal.classList.remove('modal-open');
-  modal.classList.remove('active');
+  body.classList.remove('scrolling');
 })
 
 var mySwiper = new Swiper('.swiper-container', {
