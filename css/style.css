@@ -339,6 +339,14 @@ a {
   z-index: 5;
 }
 
+.slider-next:hover {
+  opacity: 1;
+}
+
+.slider-prev:hover {
+  opacity: 1;
+}
+
 .slider-description {
   padding-right: 10px;
   width: 33.9%;
