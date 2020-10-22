@@ -7,9 +7,16 @@ textarea
   font-weight: 400
   font-size: 16px
   height: min-content
+  &:focus
+    border-color: #ffc445
 input
   +reg 
   font-weight: 400
+  &:focus
+    border-color: #ffc445
+label
+  &:hover
+      cursor: pointer
 .main
   padding-top: 49px
   padding-bottom: 100px
@@ -129,6 +136,8 @@ input
     border-radius: 3px
     border: 1px solid #dcdcdc
     margin-right: 9px
+    cursor: pointer
+    
 .private
   color: #303030
   +reg

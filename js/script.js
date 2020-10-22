@@ -43,12 +43,22 @@ closeModal.addEventListener('click', () => {
 
 
 var mySwiper = new Swiper('.swiper-container', {
+  speed: 1000,
+  loop: true,
+  autoplay: {
+    delay: 10000,
+  },
   navigation: {
     nextEl: '.slider-next',
     prevEl: '.slider-prev',
   },
 });
 var mySwiper = new Swiper('.swiper-container-reviews', {
+  speed: 1000,
+  loop: true,
+  autoplay: {
+    delay: 10000,
+  },
   navigation: {
     nextEl: '.news-next',
     prevEl: '.news-prev',
@@ -64,6 +74,11 @@ var mySwiper = new Swiper('.swiper-container-reviews', {
   },
 });
 var mySwiper = new Swiper('.swiper-container-coments', {
+  speed: 1000,
+  loop: true,
+  autoplay: {
+    delay: 10000,
+  },
   navigation: {
     nextEl: '.news-next',
     prevEl: '.news-prev',
@@ -76,6 +91,15 @@ var mySwiper = new Swiper('.swiper-container-coments', {
         index + 1
       }</span>`;
     },
+  },
+});
+
+var mySwiper = new Swiper('.swiper-container-sponsors', {
+  speed: 15000,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false
   },
 });
 

@@ -572,6 +572,11 @@ button {
   margin-bottom: 20px;
 }
 
+.info:hover {
+  -webkit-box-shadow: 0 5px 21px rgba(46, 54, 64, 0.24);
+          box-shadow: 0 5px 21px rgba(46, 54, 64, 0.24);
+}
+
 .info-wrap {
   width: 50%;
 }
@@ -623,6 +628,7 @@ button {
   padding: 20px 47px;
   cursor: pointer;
   margin-top: 40px;
+  background-color: #fff;
 }
 
 .btn-news a {
@@ -787,7 +793,7 @@ button {
   font-family: 'Gilroy-SemiBold', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  border: none;
+  border: 1px solid #fff;
 }
 
 .input-name {
@@ -841,6 +847,10 @@ button {
   margin-left: 0;
 }
 
+.footer-location {
+  margin-left: 28px;
+}
+
 .description-text {
   display: block;
   color: #7285a0;
@@ -888,6 +898,23 @@ button {
   color: #a6a6a6;
 }
 
+.swiper-container-sponsors {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+          transition-timing-function: linear !important;
+}
+
+.footer-contacts_connection {
+  margin-bottom: 40px;
+}
+
+.icon-footer {
+  margin-right: 4px;
+}
+
 textarea {
   resize: none;
   overflow: auto;
@@ -902,10 +929,22 @@ textarea {
   height: min-content;
 }
 
+textarea:focus {
+  border-color: #ffc445;
+}
+
 input {
   font-family: 'Gilroy-Regular', sans-serif;
   font-weight: 300;
   font-weight: 400;
+}
+
+input:focus {
+  border-color: #ffc445;
+}
+
+label:hover {
+  cursor: pointer;
 }
 
 .main {
@@ -1083,6 +1122,7 @@ input {
   border-radius: 3px;
   border: 1px solid #dcdcdc;
   margin-right: 9px;
+  cursor: pointer;
 }
 
 .private {
@@ -1164,8 +1204,8 @@ input {
   width: 100%;
   border-radius: 0 0 3px 3px;
   background-color: #1255cf;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .modal-btn {
@@ -1696,6 +1736,9 @@ input {
   }
   .footer-logo {
     margin-bottom: 10px;
+  }
+  .footer-location {
+    margin-left: 28px;
   }
   .nav-title {
     text-align: center;
