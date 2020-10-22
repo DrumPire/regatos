@@ -51,11 +51,39 @@
           </div>
           <button class="btn" id="modal"><a href="#">задать вопрос</a></button>
         </div>
-        <nav class="menu">
-          <img src="img/hero/burger.png" alt="menu" class="burger">
-          <div class="mobile">
-            <button class="mobile-close">&times;</button>
-            <ul>
+        <div class="mobile-response">
+          <nav class="menu">
+            <img src="img/hero/burger.png" alt="menu" class="burger">
+            <div class="mobile">
+              <button class="mobile-close">&times;</button>
+              <ul>
+                <li  class="nav-list">
+                  <a href="#">авиабилеты</a>
+                </li>
+                <li class="nav-list">
+                  <a href="#">расширенный поиск</a>
+                </li>
+                <li class="nav-list">
+                  <a href="#">горящие туры</a>
+                </li>
+                <li class="nav-list">
+                  <a href="#">конструктор туров</a>
+                </li>
+                <li class="nav-list">
+                  <a href="#">акции и спецпредложения</a>
+                </li>
+                <li class="nav-list">
+                  <a href="#">отзывы</a>
+                </li>
+                <li class="nav-list">
+                  <a href="#">о нас</a>
+                </li>
+                <li class="nav-list">
+                  <a href="#">контакты</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="nav">
               <li  class="nav-list">
                 <a href="#">авиабилеты</a>
               </li>
@@ -81,34 +109,17 @@
                 <a href="#">контакты</a>
               </li>
             </ul>
+          </nav>
+          <div class="list-response">
+            <span class="contacts-title">
+              <img src="img/hero/call.png" alt="call" class="contacts-icon">
+              <a href="tle:380 (50) 969 30 85" class="contacts-link">380 (50) 969 30 85</a>
+            </span>
+            <span class="contacts-text">телефон для консультаций</span>
           </div>
-          <ul class="nav">
-            <li  class="nav-list">
-              <a href="#">авиабилеты</a>
-            </li>
-            <li class="nav-list">
-              <a href="#">расширенный поиск</a>
-            </li>
-            <li class="nav-list">
-              <a href="#">горящие туры</a>
-            </li>
-            <li class="nav-list">
-              <a href="#">конструктор туров</a>
-            </li>
-            <li class="nav-list">
-              <a href="#">акции и спецпредложения</a>
-            </li>
-            <li class="nav-list">
-              <a href="#">отзывы</a>
-            </li>
-            <li class="nav-list">
-              <a href="#">о нас</a>
-            </li>
-            <li class="nav-list">
-              <a href="#">контакты</a>
-            </li>
-          </ul>
-        </nav>
+          <button class="btn btn-responsive" id="modal"><a href="#">задать вопрос</a></button>
+        </div>
+        <!-- /.mobile-response -->
 
         <!-- Slider main container -->
         <div class="swiper-container">
@@ -117,6 +128,9 @@
               <!-- Slides -->
               <div class="swiper-slide">
                 <div class="hero-slider">
+                  <div class="slider-img-response">
+                    <img src="img/hero/slide-one.jpg" alt="Грузинская кухня" class="image-response">
+                  </div>
                   <div class="slider-description">
                     <h1 class="slider-title">Грузинский колорит.  Вино и хачапури.</h1>
                     <p class="slider-text">
@@ -134,6 +148,9 @@
               </div>
               <div class="swiper-slide">
                 <div class="hero-slider">
+                  <div class="slider-img-response">
+                    <img src="img/hero/slide-one.jpg" alt="Грузинская кухня" class="image-response">
+                  </div>
                   <div class="slider-description">
                     <h1 class="slider-title">Грузинский колорит.  Вино и хачапури.</h1>
                     <p class="slider-text">
@@ -170,7 +187,7 @@
         <div class="info-wrap">
           <h2 class="info-title">Новости</h2>
           <a href="#"><div class="info">
-            <div class="info-img"><img src="img/news/info-one.jpg" alt="photo"></div>
+            <div class="info-img"><img src="img/news/info-one.jpg" alt="photo" class="news-img"></div>
             <div class="info-news">
               <span class="data">27.03.2019</span>
               <h3 class="news-title">Исландия: Каньон Фьядрарглюфур останется закрытым до июня</h3>
@@ -181,7 +198,7 @@
             </div>
           </div></a>
           <a href="#"><div class="info">
-            <div class="info-img"><img src="img/news/info-two.jpg" alt="photo"></div>
+            <div class="info-img"><img src="img/news/info-two.jpg" alt="photo" class="news-img"></div>
             <div class="info-news">
               <span class="data">27.03.2019</span>
               <h3 class="news-title">ОАЭ: В природном заповеднике открылся роскошный кемпинг с трейлерами</h3>
@@ -325,6 +342,18 @@
             </div>
         </div>
       </div>
+      <div class="sponsors-logo-response">
+        <img src="img/footer/tpg.png" alt="tpg" class="footer-logo">
+        <img src="img/footer/turkish.png" alt="turkish airline" class="footer-logo">
+      </div>
+      <div class="sponsors-logo-response">
+        <img src="img/footer/mouzenidis.png" alt="mouzenidis" class="footer-logo">
+        <img src="img/footer/tui.png" alt="tui" class="footer-logo">
+      </div>
+      <div class="sponsors-logo-response">
+        <img src="img/footer/pegas.png" alt="pegas" class="footer-logo">
+        <img src="img/footer/wizz.png" alt="wizz airline" class="footer-logo">
+      </div>
       <div class="footer-wrap">
         <div class="footer-description">
           <img src="img/footer/footer-logo.png" alt="logo" class="footer-logo">
@@ -365,7 +394,7 @@
               <img src="img/hero/shape.png" alt="shape" class="contacts-icon">
               <a href="#" class="contacts-link">Херсон</a> 
             </span>
-            <span class="location">проспект Ушакова 71/А</span>
+            <span class="location footer_location">проспект Ушакова 71/А</span>
           </div>
           <div class="footer-contacts_connection">
             <span class="contacts-title">
