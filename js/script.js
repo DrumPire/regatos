@@ -9,8 +9,6 @@ const closeModal = document.querySelector('.modal-close');
 const scrolling = document.querySelector('.scrolling');
 const body = document.querySelector('body');
 
-
-
 burgerButton.addEventListener('click', () => {
   mobile.classList.add('open');
   overlay.classList.add('active');
@@ -103,5 +101,15 @@ var mySwiper = new Swiper('.swiper-container-sponsors', {
   },
 });
 
-
+$(document).ready(function() {
+  $("#mainForm").validate({
+    rules: {
+      username: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      }
+    }
+  });
+});
 

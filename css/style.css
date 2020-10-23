@@ -826,6 +826,15 @@ button {
   padding-left: 44px;
 }
 
+.invalid {
+  color: red;
+  position: absolute;
+  left: 36%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+}
+
 .footer {
   background-color: #e7ecf3;
   padding-top: 50px;
@@ -981,6 +990,10 @@ input {
 }
 
 input:focus {
+  border-color: #ffc445;
+}
+
+input:hover {
   border-color: #ffc445;
 }
 
@@ -1717,6 +1730,9 @@ label:hover {
   }
   .slider-title {
     text-align: center;
+  }
+  .slider-title::before {
+    top: -15px;
   }
   .slider-text {
     text-align: center;
