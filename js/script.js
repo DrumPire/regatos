@@ -108,7 +108,18 @@ $(document).ready(function() {
         required: true,
         minlength: 2,
         maxlength: 15
+      },
+      email: {
+        email: {
+          required: true,
+          email: true
+        }
       }
+    },
+    messages: {
+      username: "",
+      email: "",
+      // review: ""
     }
   });
 });

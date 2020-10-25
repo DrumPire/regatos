@@ -236,19 +236,16 @@ a {
 }
 
 .btn {
-  border-radius: 3px;
-  background-color: #357cff;
-  border: none;
-  padding: 20px 55px;
-  cursor: pointer;
-}
-
-.btn a {
   color: #ffffff;
   font-size: 14px;
   font-family: 'Gilroy-Black', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+  border-radius: 3px;
+  background-color: #357cff;
+  border: none;
+  padding: 20px 55px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -619,7 +616,7 @@ button {
   margin-bottom: 19px;
 }
 
-.btn-news.first a {
+.btn-news.first {
   color: #ffffff;
 }
 
@@ -634,6 +631,12 @@ button {
 }
 
 .btn-news {
+  display: inline-block;
+  color: #357cff;
+  font-family: 'Gilroy-Black', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
   border: none;
   border-radius: 3px;
   border: 1px solid #357cff;
@@ -641,14 +644,6 @@ button {
   cursor: pointer;
   margin-top: 40px;
   background-color: #fff;
-}
-
-.btn-news a {
-  color: #357cff;
-  font-family: 'Gilroy-Black', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  text-transform: uppercase;
 }
 
 .btn-news:first-child {
@@ -989,10 +984,6 @@ input {
   font-weight: 400;
 }
 
-input:focus {
-  border-color: #ffc445;
-}
-
 input:hover {
   border-color: #ffc445;
 }
@@ -1187,8 +1178,12 @@ label:hover {
   line-height: 30px;
 }
 
+.error {
+  border-color: red;
+}
+
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1206,9 +1201,16 @@ label:hover {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 3px 3px 0 0;
+  border-radius: 3px;
   background-color: #ffffff;
   z-index: 999999;
+}
+
+.modal-dialog::after {
+  content: '';
+  position: absolute;
+  background-color: #1255cf;
+  width: 100%;
 }
 
 .modal-open {
@@ -1253,15 +1255,6 @@ label:hover {
   width: 100%;
 }
 
-.modal-bottom {
-  max-width: 710px;
-  width: 100%;
-  border-radius: 0 0 3px 3px;
-  background-color: #1255cf;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .modal-btn {
   border: none;
   border-radius: 3px;
@@ -1270,6 +1263,7 @@ label:hover {
   margin: 0 auto;
   display: block;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
 .modal-btn a {
