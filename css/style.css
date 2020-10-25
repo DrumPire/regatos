@@ -974,7 +974,7 @@ textarea {
   height: min-content;
 }
 
-textarea:focus {
+textarea:hover {
   border-color: #ffc445;
 }
 
@@ -1264,9 +1264,6 @@ label:hover {
   display: block;
   cursor: pointer;
   margin-bottom: 30px;
-}
-
-.modal-btn a {
   color: #303030;
   font-family: 'Gilroy-Black', sans-serif;
   font-weight: 400;
@@ -1692,6 +1689,9 @@ label:hover {
     margin-top: 20px;
     display: block;
     margin: 0 auto;
+    max-width: 200px;
+    padding: 10px 20px;
+    text-align: center;
   }
   .btn a {
     font-size: 10px;
@@ -1705,6 +1705,9 @@ label:hover {
   .btn-news {
     margin: 0 auto;
     display: block;
+    max-width: 200px;
+    padding: 10px 20px;
+    text-align: center;
   }
   .btn-responsive {
     margin: 0;
@@ -1792,6 +1795,10 @@ label:hover {
     margin-bottom: 0;
     margin-right: 0;
     display: block;
+    text-align: right;
+  }
+  .phone-link {
+    font-size: 12px;
   }
   .menu {
     padding-top: 0;
@@ -1814,6 +1821,7 @@ label:hover {
   }
   .contacts-text {
     margin-left: 0;
+    font-size: 9px;
   }
   .footer_location {
     font-size: 16px;
@@ -1970,8 +1978,15 @@ label:hover {
     display: block;
     margin: 0 auto;
   }
-  .list-response {
-    display: none;
+  .phone-link {
+    font-size: 10px;
+  }
+  .btn-responsive {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .contacts-text {
+    font-size: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */

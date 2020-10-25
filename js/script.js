@@ -109,17 +109,29 @@ $(document).ready(function() {
         minlength: 2,
         maxlength: 15
       },
-      email: {
-        email: {
-          required: true,
-          email: true
-        }
-      }
+      email: "required",
+      review: "required"
     },
     messages: {
       username: "",
       email: "",
-      // review: ""
+      review: ""
+    }
+  });
+  $("#modalForm").validate({
+    rules: {
+      username: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      email: "required",
+      review: "required"
+    },
+    messages: {
+      username: "",
+      email: "",
+      review: ""
     }
   });
 });
