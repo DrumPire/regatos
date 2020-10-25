@@ -1200,6 +1200,10 @@ label:hover {
   border-radius: 3px;
   background-color: #ffffff;
   z-index: 999999;
+  padding-bottom: 5px;
+  background-image: url("../img/modal.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .modal-dialog::after {
@@ -1600,9 +1604,7 @@ label:hover {
 @media (max-width: 640px) {
   .modal-btn {
     padding: 10px 50px;
-  }
-  .modal-btn a {
-    font-size: 12px;
+    margin-bottom: 0;
   }
   .modal-title {
     font-size: 30px;
@@ -1616,6 +1618,8 @@ label:hover {
   }
   .modal-dialog {
     width: 90%;
+    background-image: url("../img/modalmob.png");
+    padding-bottom: 20px;
   }
   .modal-dialog .input-review {
     max-width: 640px;
