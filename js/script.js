@@ -134,5 +134,19 @@ $(document).ready(function() {
       review: ""
     }
   });
+  $("#helpsForm").validate({
+    rules: {
+      username: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      phone: "required"
+    },
+    messages: {
+      username: "",
+      phone: ""
+    }
+  });
 });
 
