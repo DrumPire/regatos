@@ -1206,13 +1206,6 @@ label:hover {
   background-repeat: no-repeat;
 }
 
-.modal-dialog::after {
-  content: '';
-  position: absolute;
-  background-color: #1255cf;
-  width: 100%;
-}
-
 .modal-open {
   display: block;
 }
@@ -1602,6 +1595,9 @@ label:hover {
 }
 
 @media (max-width: 640px) {
+  .modal {
+    overflow-y: auto;
+  }
   .modal-btn {
     padding: 10px 50px;
     margin-bottom: 0;

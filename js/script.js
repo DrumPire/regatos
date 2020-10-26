@@ -3,6 +3,7 @@ const mobile = document.querySelector('.mobile');
 const mobileClose = document.querySelector('.mobile-close');
 const overlay = document.querySelector('.overlay');
 const openModal = document.querySelector('#modal');
+const openModalResponse = document.querySelector('#modal-response');
 const openFooterModal = document.querySelector('#footer-modal');
 const modal = document.querySelector('.modal');
 const closeModal = document.querySelector('.modal-close');
@@ -30,6 +31,11 @@ openModal.addEventListener('click', () => {
 })
 
 openFooterModal.addEventListener('click', () => {
+  modal.classList.add('modal-open');
+  body.classList.add('scrolling');
+})
+
+openModalResponse.addEventListener('click', () => {
   modal.classList.add('modal-open');
   body.classList.add('scrolling');
 })
