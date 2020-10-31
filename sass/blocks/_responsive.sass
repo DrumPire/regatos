@@ -350,7 +350,7 @@
     &-title
       text-align: center
       &::before
-        top: -15px
+        display: none
     &-text 
       text-align: center
     &-description
@@ -407,6 +407,8 @@
   .news
     padding-bottom: 35px
     padding-top: 0
+    &-title
+      line-height: 15px
     &-text 
       margin-top: 0
       line-height: 16px
@@ -462,14 +464,19 @@
   .join
     margin-left: 0
   .main
+    &-text 
+      margin-bottom: 0
     &-head
       flex-direction: column
+      margin-top: 20px
     &-wrap
       margin-top: 40px
     &-inputs
       flex-direction: column
     &-title
       font-size: 14px
+    &::before
+      margin-bottom: 25px
   .private
     font-size: 10px
   .swiper
@@ -484,6 +491,9 @@
     &-img
       margin-bottom: 14px
   .coments
+    &-text 
+      font-size: 12px
+      line-height: 16px
     &-link
       margin-top: 20px
       margin-bottom: 25px

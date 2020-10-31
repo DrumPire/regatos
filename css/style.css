@@ -989,7 +989,6 @@ label:hover {
 }
 
 .main {
-  padding-top: 49px;
   padding-bottom: 100px;
 }
 
@@ -1725,7 +1724,7 @@ label:hover {
     text-align: center;
   }
   .slider-title::before {
-    top: -15px;
+    display: none;
   }
   .slider-text {
     text-align: center;
@@ -1805,6 +1804,9 @@ label:hover {
   .news {
     padding-bottom: 35px;
     padding-top: 0;
+  }
+  .news-title {
+    line-height: 15px;
   }
   .news-text {
     margin-top: 0;
@@ -1897,11 +1899,15 @@ label:hover {
   .join {
     margin-left: 0;
   }
+  .main-text {
+    margin-bottom: 0;
+  }
   .main-head {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 20px;
   }
   .main-wrap {
     margin-top: 40px;
@@ -1914,6 +1920,9 @@ label:hover {
   }
   .main-title {
     font-size: 14px;
+  }
+  .main::before {
+    margin-bottom: 25px;
   }
   .private {
     font-size: 10px;
@@ -1929,6 +1938,10 @@ label:hover {
   }
   .review-img {
     margin-bottom: 14px;
+  }
+  .coments-text {
+    font-size: 12px;
+    line-height: 16px;
   }
   .coments-link {
     margin-top: 20px;
