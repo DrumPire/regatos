@@ -1624,7 +1624,7 @@ label:hover {
   }
   .modal-btn {
     padding: 10px 50px;
-    margin-bottom: 0;
+    margin-bottom: 12px;
   }
   .modal-title {
     font-size: 30px;
@@ -1639,7 +1639,6 @@ label:hover {
   .modal-dialog {
     width: 90%;
     background-image: url("../img/modalmob.png");
-    padding-bottom: 20px;
   }
   .modal-dialog .input-review {
     max-width: 640px;
