@@ -268,10 +268,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
 }
 
 .slider-img {
-  width: 66.1%;
+  width: 60%;
 }
 
 .slider-title {
@@ -354,7 +358,7 @@ a {
 
 .slider-description {
   padding-right: 10px;
-  width: 33.9%;
+  width: 40%;
 }
 
 .menu {
@@ -705,6 +709,7 @@ button {
   margin-top: 40px;
   margin-bottom: 50px;
   display: block;
+  cursor: pointer;
 }
 
 .number {
@@ -737,6 +742,10 @@ button {
 .reviews-con {
   width: 50%;
   padding-left: 140px;
+}
+
+.swiper-slide {
+  background-color: #fff;
 }
 
 .swiper-container-reviews {
@@ -1165,6 +1174,10 @@ label:hover {
   cursor: pointer;
 }
 
+.watch {
+  display: block !important;
+}
+
 .private {
   color: #303030;
   font-family: 'Gilroy-Regular', sans-serif;
@@ -1175,6 +1188,10 @@ label:hover {
 
 .error {
   border-color: red;
+}
+
+.reviev-hidden {
+  display: none;
 }
 
 .modal {
@@ -1265,6 +1282,10 @@ label:hover {
 
 .modal-btn:hover {
   background-color: #ffb412;
+}
+
+#modal-response {
+  display: none;
 }
 
 @media (max-width: 1439px) {
@@ -1597,6 +1618,10 @@ label:hover {
   .modal {
     overflow-y: auto;
   }
+  .modal-close {
+    top: 15px;
+    right: 15px;
+  }
   .modal-btn {
     padding: 10px 50px;
     margin-bottom: 0;
@@ -1654,7 +1679,7 @@ label:hover {
     display: block;
     max-width: 640px;
     width: 100%;
-    height: 320px;
+    height: 240px;
     margin-bottom: 20px;
   }
   .header {
@@ -1675,6 +1700,17 @@ label:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    display: none;
+  }
+  .contacts-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts-text {
     display: none;
   }
   .social {
@@ -1793,7 +1829,12 @@ label:hover {
     text-align: right;
   }
   .phone-link {
-    font-size: 12px;
+    font-size: 18px;
+  }
+  #modal-response {
+    display: block;
+    width: 48px;
+    height: 48px;
   }
   .menu {
     padding-top: 0;
@@ -1947,6 +1988,13 @@ label:hover {
     margin-top: 20px;
     margin-bottom: 25px;
   }
+  .watch-text {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .main .slider-btn {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1988,7 +2036,7 @@ label:hover {
     margin: 0 auto;
   }
   .phone-link {
-    font-size: 10px;
+    font-size: 18px;
   }
   .btn-responsive {
     padding: 10px;

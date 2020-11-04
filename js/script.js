@@ -9,6 +9,8 @@ const modal = document.querySelector('.modal');
 const closeModal = document.querySelector('.modal-close');
 const scrolling = document.querySelector('.scrolling');
 const body = document.querySelector('body');
+const comentsLink = document.querySelector('.coments-link');
+const revievHidden = document.querySelector('.reviev-hidden');
 
 burgerButton.addEventListener('click', () => {
   mobile.classList.add('open');
@@ -45,10 +47,16 @@ closeModal.addEventListener('click', () => {
   body.classList.remove('scrolling');
 })
 
+comentsLink.addEventListener('click', () => {
+  revievHidden.classList.add('watch');
+  comentsLink.style.cssText = 'display: none';
+})
+
 
 var mySwiper = new Swiper('.swiper-container', {
   speed: 1000,
   loop: true,
+  effect: 'fade',
   autoplay: {
     delay: 10000,
   },
@@ -60,6 +68,7 @@ var mySwiper = new Swiper('.swiper-container', {
 var mySwiper = new Swiper('.swiper-container-reviews', {
   speed: 1000,
   loop: true,
+  effect: 'fade',
   autoplay: {
     delay: 10000,
   },
@@ -80,6 +89,7 @@ var mySwiper = new Swiper('.swiper-container-reviews', {
 var mySwiper = new Swiper('.swiper-container-coments', {
   speed: 1000,
   loop: true,
+  effect: 'fade',
   autoplay: {
     delay: 10000,
   },
