@@ -1195,6 +1195,23 @@ label:hover {
   display: none;
 }
 
+.load {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: #357cff;
+  font-family: 'Gilroy-Black', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  border: 1px solid #357cff;
+  padding: 20px 47px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1450,6 +1467,9 @@ label:hover {
     font-size: 10px;
     margin-left: 23px;
   }
+  .load {
+    padding: 10px 20px;
+  }
   .btn {
     padding: 10px 20px;
   }
@@ -1616,6 +1636,13 @@ label:hover {
 }
 
 @media (max-width: 640px) {
+  .load {
+    max-width: 200px;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
   .modal {
     overflow-y: auto;
   }
