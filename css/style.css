@@ -918,6 +918,7 @@ button {
           justify-content: space-between;
   padding-bottom: 55px;
   border-bottom: 1px solid #ffffff;
+  background-color: #e7ecf3;
 }
 
 .nav-title {
@@ -1450,7 +1451,7 @@ label:hover {
     margin-left: 23px;
   }
   .btn {
-    padding: 10px 40px;
+    padding: 10px 20px;
   }
   .slider-title {
     font-size: 24px;
@@ -1493,7 +1494,7 @@ label:hover {
   }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 897px) {
   .modal-form {
     margin: 0 auto;
     max-width: 650px;
