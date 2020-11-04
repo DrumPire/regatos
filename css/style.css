@@ -1501,7 +1501,7 @@ label:hover {
   }
   .burger {
     display: block;
-    padding: 0 15px;
+    padding-left: 15px;
   }
   .coments-text {
     font-size: 14px;
@@ -1640,8 +1640,9 @@ label:hover {
     max-width: 200px;
     padding: 10px 20px;
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 12px;
   }
   .modal {
     overflow-y: auto;
@@ -1967,8 +1968,12 @@ label:hover {
   .join {
     margin-left: 0;
   }
+  .main {
+    padding-bottom: 30px;
+  }
   .main-text {
     margin-bottom: 0;
+    line-height: 15px;
   }
   .main-head {
     -webkit-box-orient: vertical;
@@ -2021,6 +2026,12 @@ label:hover {
   }
   .main .slider-btn {
     margin-bottom: 30px;
+  }
+  .main-text .coments-link {
+    margin-top: 20px;
+  }
+  .burger {
+    padding-left: 0;
   }
 }
 
