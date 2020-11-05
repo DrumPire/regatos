@@ -548,6 +548,7 @@ button {
   font-weight: 400;
   line-height: 24px;
   margin-top: 19px;
+  padding-right: 10px;
 }
 
 .swiper-slide {
