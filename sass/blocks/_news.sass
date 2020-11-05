@@ -53,6 +53,11 @@ button
     line-height: 24px
     margin-top: 19px
 .swiper
+  &-slide
+    opacity: 0
+    visibility: hidden
+    &-active
+      visibility: visible
   &-pagination
     &-bullet
       &-active
@@ -146,11 +151,8 @@ button
     font-size: 30px
     font-weight: 400
     line-height: 48px
-    &::after
-      content: ''
-      display: block
-      height: 1px
-      background-color: #e7ecf3
+    overflow-y: auto
+    max-height: 262px
   &-link 
     color: #357cff
     font-size: 12px
@@ -161,6 +163,8 @@ button
     margin-bottom: 50px
     display: block
     cursor: pointer
+    border: none
+    background-color: #fff
 .number
   color: #357cff
   font-size: 16px

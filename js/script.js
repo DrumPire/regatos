@@ -73,6 +73,27 @@ function toggleText() {
   });
 }
 toggleText();
+
+function toggleTextIndex() {
+  const mainTexts = document.querySelectorAll('.js-toggle-text-main');
+  const button = `<button class="coments-link">Читать подробнее</button>`;
+
+  mainTexts.forEach((mainText) => {
+  const text = mainText.textContent;
+
+    if(mainText.textContent.length > 130) {
+      mainText.textContent = text.slice(0, 130);
+      mainText.insertAdjacentHTML('beforeend', button);
+      mainText.addEventListener('click', (event) => {
+        if(event.target.classList.contains('coments-link')) {
+          mainText.textContent = text;
+        }
+      });
+    }
+  });
+}
+toggleTextIndex();
+
 var mySwiper = new Swiper('.swiper-container', {
   speed: 1000,
   loop: true,

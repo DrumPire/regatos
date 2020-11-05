@@ -550,6 +550,15 @@ button {
   margin-top: 19px;
 }
 
+.swiper-slide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.swiper-slide-active {
+  visibility: visible;
+}
+
 .swiper-pagination-bullet-active {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -690,13 +699,8 @@ button {
   font-size: 30px;
   font-weight: 400;
   line-height: 48px;
-}
-
-.coments-text::after {
-  content: '';
-  display: block;
-  height: 1px;
-  background-color: #e7ecf3;
+  overflow-y: auto;
+  max-height: 262px;
 }
 
 .coments-link {
@@ -710,6 +714,8 @@ button {
   margin-bottom: 50px;
   display: block;
   cursor: pointer;
+  border: none;
+  background-color: #fff;
 }
 
 .number {
@@ -781,6 +787,7 @@ button {
 }
 
 .form-btn {
+  color: #303030;
   padding: 20px 78px;
   font-family: 'Gilroy-Black', sans-serif;
   font-weight: 400;
@@ -790,10 +797,6 @@ button {
   border: none;
   border-radius: 3px;
   background-color: #ffc445;
-}
-
-.form-btn a {
-  color: #303030;
 }
 
 .form-btn:hover {
@@ -947,11 +950,6 @@ button {
 
 .swiper-container-sponsors {
   overflow: hidden;
-}
-
-.swiper-wrapper {
-  -webkit-transition-timing-function: linear !important;
-          transition-timing-function: linear !important;
 }
 
 .footer-contacts_connection {
