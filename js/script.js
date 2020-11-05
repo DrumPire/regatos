@@ -50,11 +50,29 @@ closeModal.addEventListener('click', () => {
   body.classList.remove('scrolling');
 })
 
-comentsLink.addEventListener('click', () => {
-  revievHidden.classList.add('watch');
-  comentsLink.style.cssText = 'display: none';
-})
+// comentsLink.addEventListener('click', () => {
+//   revievHidden.classList.add('watch');
+//   comentsLink.style.cssText = 'display: none';
+// })
+function toggleText() {
+  const mainTexts = document.querySelectorAll('.js-toggle-text');
+  const button = `<button class="coments-link">Показать полностью</button>`;
 
+  mainTexts.forEach((mainText) => {
+  const text = mainText.textContent;
+
+    if(mainText.textContent.length > 300) {
+      mainText.textContent = text.slice(0, 300);
+      mainText.insertAdjacentHTML('beforeend', button);
+      mainText.addEventListener('click', (event) => {
+        if(event.target.classList.contains('coments-link')) {
+          mainText.textContent = text;
+        }
+      });
+    }
+  });
+}
+toggleText();
 var mySwiper = new Swiper('.swiper-container', {
   speed: 1000,
   loop: true,
