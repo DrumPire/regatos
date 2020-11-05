@@ -13,8 +13,6 @@ const comentsLink = document.querySelector('.coments-link');
 const revievHidden = document.querySelector('.reviev-hidden');
 
 
-
-
 burgerButton.addEventListener('click', () => {
   mobile.classList.add('open');
   overlay.classList.add('active');
@@ -50,10 +48,6 @@ closeModal.addEventListener('click', () => {
   body.classList.remove('scrolling');
 })
 
-// comentsLink.addEventListener('click', () => {
-//   revievHidden.classList.add('watch');
-//   comentsLink.style.cssText = 'display: none';
-// })
 function toggleText() {
   const mainTexts = document.querySelectorAll('.js-toggle-text');
   const button = `<button class="coments-link">Показать полностью</button>`;
@@ -93,6 +87,7 @@ function toggleTextIndex() {
   });
 }
 toggleTextIndex();
+
 
 var mySwiper = new Swiper('.swiper-container', {
   speed: 1000,
