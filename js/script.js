@@ -92,7 +92,11 @@ toggleTextIndex();
 var mySwiper = new Swiper('.swiper-container', {
   speed: 1000,
   loop: true,
+  disableOnInteraction: true,
   effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
   autoplay: {
     delay: 10000,
   },
@@ -104,28 +108,11 @@ var mySwiper = new Swiper('.swiper-container', {
 var mySwiper = new Swiper('.swiper-container-reviews', {
   speed: 1000,
   loop: true,
+  disableOnInteraction: true,
   effect: 'fade',
-  autoplay: {
-    delay: 10000,
+  fadeEffect: {
+    crossFade: true,
   },
-  navigation: {
-    nextEl: '.news-next',
-    prevEl: '.news-prev',
-  },
-  pagination: {
-    el: '.news-pagination',
-    clickable: true,
-    renderBullet: function (index, activeClassName) {
-      return `<span class="news-pagination-number ${activeClassName}">${
-        index + 1
-      }</span>`;
-    },
-  },
-});
-var mySwiper = new Swiper('.swiper-container-coments', {
-  speed: 1000,
-  loop: true,
-  effect: 'fade',
   autoplay: {
     delay: 10000,
   },
