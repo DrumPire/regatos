@@ -1,0 +1,71 @@
+@media (min-width: 640px) {
+  .slider-img {
+    width: 60%;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: white;
+      transform: translateX(0);
+      transition: all 1000ms;
+      transition-delay: 1000ms;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+  }
+
+  .swiper-slide {
+    .animate {
+      transform: translateX(-30%);
+      opacity: 0;
+
+      &-first {
+        transition: all 1000ms;
+        transition-delay: 1000ms;
+      }
+
+      &-second {
+        transition: all 1200ms;
+        transition-delay: 1400ms;
+      }
+
+      &-third {
+        transition: all 1400ms;
+        transition-delay: 1800ms;
+      }
+
+      &-fourth {
+        img {
+          opacity: 0;
+          transition: opacity 300ms;
+          transition-delay: 1000ms;
+        }
+      }
+    }
+
+    &-active {
+      .animate {
+        transform: translateX(0);
+        opacity: 1;
+
+        &-fourth {
+          img {
+            opacity: 1;
+          }
+
+          &::after {
+            transform: translateX(100%);
+          }
+        }
+      }
+    }
+  }
+}

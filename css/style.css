@@ -1306,6 +1306,74 @@ label:hover {
   display: none;
 }
 
+@media (min-width: 640px) {
+  .slider-img {
+    width: 60%;
+    position: relative;
+  }
+  .slider-img::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+    -webkit-transition-delay: 1000ms;
+            transition-delay: 1000ms;
+  }
+  .btn {
+    display: inline-block;
+  }
+  .swiper-slide .animate {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+    opacity: 0;
+  }
+  .swiper-slide .animate-first {
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+    -webkit-transition-delay: 1000ms;
+            transition-delay: 1000ms;
+  }
+  .swiper-slide .animate-second {
+    -webkit-transition: all 1200ms;
+    transition: all 1200ms;
+    -webkit-transition-delay: 1400ms;
+            transition-delay: 1400ms;
+  }
+  .swiper-slide .animate-third {
+    -webkit-transition: all 1400ms;
+    transition: all 1400ms;
+    -webkit-transition-delay: 1800ms;
+            transition-delay: 1800ms;
+  }
+  .swiper-slide .animate-fourth img {
+    opacity: 0;
+    -webkit-transition: opacity 300ms;
+    transition: opacity 300ms;
+    -webkit-transition-delay: 1000ms;
+            transition-delay: 1000ms;
+  }
+  .swiper-slide-active .animate {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  .swiper-slide-active .animate-fourth img {
+    opacity: 1;
+  }
+  .swiper-slide-active .animate-fourth::after {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
 @media (max-width: 1439px) {
   .contacts-title {
     font-size: 16px;
