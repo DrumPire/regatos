@@ -47,53 +47,33 @@ closeModal.addEventListener('click', () => {
   body.classList.remove('scrolling');
 });
 
-function toggleText() {
-  const mainTexts = document.querySelectorAll('.js-toggle-text');
+function toggleText(elements, length) {
   const buttonMore = `<button class="coments-link more">Читать подробнее</button>`;
   const buttonLess = `<button class="coments-link less">Cвернуть отзыв</button>`;
 
-  mainTexts.forEach((mainText) => {
+  elements.forEach((mainText) => {
     const text = mainText.textContent;
 
-    if (mainText.textContent.length > 300) {
-      mainText.textContent = text.slice(0, 300) + '...';
+    if (mainText.textContent.length > length) {
+      mainText.textContent = text.slice(0, length) + '...';
       mainText.insertAdjacentHTML('beforeend', buttonMore);
       mainText.addEventListener('click', (event) => {
         if (event.target.classList.contains('more')) {
           mainText.innerHTML = text + buttonLess;
         }
         if (event.target.classList.contains('less')) {
-          mainText.innerHTML = text.slice(0, 300) + '...' + buttonMore;
+          mainText.innerHTML = text.slice(0, length) + '...' + buttonMore;
         }
       });
     }
   });
 }
-toggleText();
 
-function toggleTextIndex() {
-  const mainTexts = document.querySelectorAll('.js-toggle-text-main');
-  const buttonMore = `<button class="coments-link more">Читать подробнее</button>`;
-  const buttonLess = `<button class="coments-link less">Cвернуть отзыв</button>`;
+const reviewsPage = document.querySelectorAll('.js-toggle-text');
+const mainPage = document.querySelectorAll('.js-toggle-text-main');
 
-  mainTexts.forEach((mainText) => {
-    const text = mainText.textContent;
-
-    if (mainText.textContent.length > 130) {
-      mainText.textContent = text.slice(0, 130) + '...';
-      mainText.insertAdjacentHTML('beforeend', buttonMore);
-      mainText.addEventListener('click', (event) => {
-        if (event.target.classList.contains('more')) {
-          mainText.innerHTML = text + buttonLess;
-        }
-        if (event.target.classList.contains('less')) {
-          mainText.innerHTML = text.slice(0, 130) + '...' + buttonMore;
-        }
-      });
-    }
-  });
-}
-toggleTextIndex();
+toggleText(reviewsPage, 300);
+toggleText(mainPage, 130);
 
 var mySwiper = new Swiper('.swiper-container', {
   speed: 1000,
