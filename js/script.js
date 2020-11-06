@@ -12,7 +12,6 @@ const body = document.querySelector('body');
 const comentsLink = document.querySelector('.coments-link');
 const revievHidden = document.querySelector('.reviev-hidden');
 
-
 burgerButton.addEventListener('click', () => {
   mobile.classList.add('open');
   overlay.classList.add('active');
@@ -26,40 +25,40 @@ mobileClose.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
   mobile.classList.remove('open');
   overlay.classList.remove('active');
-})
+});
 
 openModal.addEventListener('click', () => {
   modal.classList.add('modal-open');
   body.classList.add('scrolling');
-})
+});
 
 openFooterModal.addEventListener('click', () => {
   modal.classList.add('modal-open');
   body.classList.add('scrolling');
-})
+});
 
 openModalResponse.addEventListener('click', () => {
   modal.classList.add('modal-open');
   body.classList.add('scrolling');
-})
+});
 
 closeModal.addEventListener('click', () => {
   modal.classList.remove('modal-open');
   body.classList.remove('scrolling');
-})
+});
 
 function toggleText() {
   const mainTexts = document.querySelectorAll('.js-toggle-text');
   const button = `<button class="coments-link">Показать полностью</button>`;
 
   mainTexts.forEach((mainText) => {
-  const text = mainText.textContent;
+    const text = mainText.textContent;
 
-    if(mainText.textContent.length > 300) {
+    if (mainText.textContent.length > 300) {
       mainText.textContent = text.slice(0, 300);
       mainText.insertAdjacentHTML('beforeend', button);
       mainText.addEventListener('click', (event) => {
-        if(event.target.classList.contains('coments-link')) {
+        if (event.target.classList.contains('coments-link')) {
           mainText.textContent = text;
         }
       });
@@ -73,13 +72,13 @@ function toggleTextIndex() {
   const button = `<button class="coments-link">Читать подробнее</button>`;
 
   mainTexts.forEach((mainText) => {
-  const text = mainText.textContent;
+    const text = mainText.textContent;
 
-    if(mainText.textContent.length > 130) {
+    if (mainText.textContent.length > 130) {
       mainText.textContent = text.slice(0, 130);
       mainText.insertAdjacentHTML('beforeend', button);
       mainText.addEventListener('click', (event) => {
-        if(event.target.classList.contains('coments-link')) {
+        if (event.target.classList.contains('coments-link')) {
           mainText.textContent = text;
         }
       });
@@ -88,17 +87,16 @@ function toggleTextIndex() {
 }
 toggleTextIndex();
 
-
 var mySwiper = new Swiper('.swiper-container', {
   speed: 1000,
   loop: true,
   disableOnInteraction: true,
   effect: 'fade',
   fadeEffect: {
-    crossFade: true,
+    crossFade: false,
   },
   autoplay: {
-    delay: 10000,
+    delay: 5000,
   },
   navigation: {
     nextEl: '.slider-next',
@@ -136,56 +134,55 @@ var mySwiper = new Swiper('.swiper-container-sponsors', {
   loop: true,
   autoplay: {
     delay: 0,
-    disableOnInteraction: false
+    disableOnInteraction: false,
   },
 });
 
-$(document).ready(function() {
-  $("#mainForm").validate({
+$(document).ready(function () {
+  $('#mainForm').validate({
     rules: {
       username: {
         required: true,
         minlength: 2,
-        maxlength: 15
+        maxlength: 15,
       },
-      email: "required",
-      review: "required"
+      email: 'required',
+      review: 'required',
     },
     messages: {
-      username: "",
-      email: "",
-      review: ""
-    }
+      username: '',
+      email: '',
+      review: '',
+    },
   });
-  $("#modalForm").validate({
+  $('#modalForm').validate({
     rules: {
       username: {
         required: true,
         minlength: 2,
-        maxlength: 15
+        maxlength: 15,
       },
-      email: "required",
-      review: "required"
+      email: 'required',
+      review: 'required',
     },
     messages: {
-      username: "",
-      email: "",
-      review: ""
-    }
+      username: '',
+      email: '',
+      review: '',
+    },
   });
-  $("#helpsForm").validate({
+  $('#helpsForm').validate({
     rules: {
       username: {
         required: true,
         minlength: 2,
-        maxlength: 15
+        maxlength: 15,
       },
-      phone: "required"
+      phone: 'required',
     },
     messages: {
-      username: "",
-      phone: ""
-    }
+      username: '',
+      phone: '',
+    },
   });
 });
-
