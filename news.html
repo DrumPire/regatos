@@ -6,11 +6,133 @@
   <title>Новости</title>
   <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css" /> 
-  <script src="js/news.js" defer></script> 
+  <script src="js/jquery-3.5.1.min.js" defer></script>
+  <script src="js/jquery.validate.min.js" defer></script>
+  <script src="js/swiper-bundle.min.js" defer></script>
+  <script src="js/news.js" defer></script>
 </head>
 <body>
-  <!-- Вставить хедер на вп -->
+  <header class="header">
+    <div class="container">
+      <div class="header-wrap">
+        <span class="header-description">Горящие туры. Авиакассы. Визовый сервис. Страхование.</span>
+        <span class="header-description join">Присоединяйся</span>
+        <div class="social">
+          <div class="social-fb"><a href="#" class="social-link"><img src="img/fb.png" alt=""></a></div>
+          <div class="social-telegram"><a href="#" class="social-link"><img src="img/telegram.png" alt=""></a></div>
+          <div class="social-instagram"><a href="#" class="social-link"><img src="img/instagram.png" alt=""></a></div>
+        </div>
+      </div>
+      <!-- /.header-wrap -->
+      <div class="hero">
+      <div class="contacts">
+        <a href="./"><img src="img/logo.png" alt="Logo" class="logo"></a>
+        <div class="contacts-list">
+          <div class="list location-title">
+            <span class="contacts-title">
+              <img src="img/hero/shape.png" alt="shape" class="contacts-icon">
+              <a href="#" class="contacts-link">Херсон</a> 
+            </span>
+            <span class="location">проспект Ушакова 71/А</span>
+          </div>
+          <div class="list location-title">
+            <span class="contacts-title">
+              <img src="img/hero/email.png" alt="email" class="contacts-icon">
+              <a href="mailto:regatosdir@gmail.com" class="contacts-link">regatosdir@gmail.com</a>
+            </span>
+            <span class="contacts-text">электронная почта</span>
+          </div>
+          <div class="list">
+            <span class="contacts-title">
+              <img src="img/hero/call.png" alt="call" class="contacts-icon">
+              <a href="tle:380 (50) 969 30 85" class="contacts-link phone-link">380 (50) 969 30 85</a>
+            </span>
+            <span class="contacts-text">телефон для консультаций</span>
+          </div>
+        </div>
+        <button class="btn" id="modal">задать вопрос</button>
+      </div>
+      <div class="mobile-response">
+        <nav class="menu">
+          <img src="img/hero/burger.png" alt="menu" class="burger" />
+          <div class="mobile">
+            <a href="./"><img src="img/logo.png" alt="Logo" class="logo-mobile" /></a>
+            <button class="mobile-close">&times;</button>
+            <ul>
+              <li class="nav-list">
+                <a href="./">главная</a>
+              </li>
+              <li class="nav-list">
+                <a href="#">авиабилеты</a>
+              </li>
+              <li class="nav-list">
+                <a href="#">расширенный поиск</a>
+              </li>
+              <li class="nav-list">
+                <a href="#">горящие туры</a>
+              </li>
+              <li class="nav-list">
+                <a href="#">конструктор туров</a>
+              </li>
+              <li class="nav-list">
+                <a href="#">акции и спецпредложения</a>
+              </li>
+              <li class="nav-list">
+                <a href="#">отзывы</a>
+              </li>
+              <li class="nav-list">
+                <a href="#">о нас</a>
+              </li>
+              <li class="nav-list">
+                <a href="#">контакты</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="nav">
+            <li class="nav-list">
+              <a href="#">авиабилеты</a>
+            </li>
+            <li class="nav-list">
+              <a href="#">расширенный поиск</a>
+            </li>
+            <li class="nav-list">
+              <a href="#">горящие туры</a>
+            </li>
+            <li class="nav-list">
+              <a href="#">конструктор туров</a>
+            </li>
+            <li class="nav-list">
+              <a href="#">акции и спецпредложения</a>
+            </li>
+            <li class="nav-list">
+              <a href="#">отзывы</a>
+            </li>
+            <li class="nav-list">
+              <a href="#">о нас</a>
+            </li>
+            <li class="nav-list">
+              <a href="#">контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="list-response">
+          <span class="contacts-title">
+            <img src="img/hero/call.png" alt="call" class="contacts-icon" />
+            <a
+              href="tle:380 (50) 969 30 85"
+              class="contacts-link phone-link"
+              >380 (50) 969 30 85</a
+            >
+          </span>
+          <span class="contacts-text">телефон для консультаций</span>
+        </div>
+        <img src="img/questions.svg" alt="" id="modal-response" />
+      </div>
+      </div>
+    </div>
+  </header>
   <main class="main">
     <div class="container-news">
       <span class="main-description"><a href="./index.html">главная страница</a></span>
@@ -90,6 +212,130 @@
           </div></a>
     </div>
   </main>
-  <!-- Вставить футер на вп -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Slider main container -->
+      <div class="swiper-container-sponsors">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="sponsors-logo">
+                <img src="img/footer/tpg.png" alt="tpg" class="footer-logo">
+                <img src="img/footer/turkish.png" alt="turkish airline" class="footer-logo">
+                <img src="img/footer/mouzenidis.png" alt="mouzenidis" class="footer-logo">
+                <img src="img/footer/tui.png" alt="tui" class="footer-logo">
+                <img src="img/footer/pegas.png" alt="pegas" class="footer-logo">
+                <img src="img/footer/wizz.png" alt="wizz airline" class="footer-logo">
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="sponsors-logo-response">
+        <img src="img/footer/tpg.png" alt="tpg" class="footer-logo">
+        <img src="img/footer/turkish.png" alt="turkish airline" class="footer-logo">
+      </div>
+      <div class="sponsors-logo-response">
+        <img src="img/footer/mouzenidis.png" alt="mouzenidis" class="footer-logo">
+        <img src="img/footer/tui.png" alt="tui" class="footer-logo">
+      </div>
+      <div class="sponsors-logo-response">
+        <img src="img/footer/pegas.png" alt="pegas" class="footer-logo">
+        <img src="img/footer/wizz.png" alt="wizz airline" class="footer-logo">
+      </div>
+      <div class="footer-wrap">
+        <div class="footer-description">
+          <img src="img/footer/footer-logo.png" alt="logo" class="footer-logo">
+          <span class="description-text">© Regatos 2019.</span>
+          <span class="description-text">Горящие туры. Авиакассы.</span>
+          <span class="description-text">Визовый сервис. Страхование.</span>
+        </div>
+        <div class="footer-nav">
+          <span class="nav-title">меню</span>
+          <ul class="footer-list">
+            <li class="list_item">
+              <a href="#">Авиабилеты</a>
+            </li>
+            <li class="list_item">
+              <a href="#">Расширенный поиск</a>
+            </li>
+            <li class="list_item">
+              <a href="#">Горящие туры</a>
+            </li>
+            <li class="list_item">
+              <a href="#">Конструктор туров</a>
+            </li>
+            <li class="list_item">
+              <a href="#">Акции и спецпредложения</a>
+            </li>
+            <li class="list_item">
+              <a href="#">Отзывы</a>
+            </li>
+            <li class="list_item">
+              <a href="#">О нас</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <span class="nav-title">контакты</span>
+          <div class="footer-contacts_connection">
+            <span class="contacts-title">
+              <img src="img/hero/shape.png" alt="shape" class="contacts-icon">
+              <a href="#" class="contacts-link">Херсон</a>
+            </span>
+            <span class="location footer_location">проспект Ушакова 71/А</span>
+          </div>
+          <div class="footer-contacts_connection">
+            <span class="contacts-title">
+              <img src="img/hero/email.png" alt="email" class="icon-footer">
+                <a href="mailto:regatosdir@gmail.com" class="contacts-link">regatosdir@gmail.com</a>
+            </span>
+            <span class="location footer-location">электронная почта</span>
+          </div>
+          <div class="footer-contacts_connection">
+            <span class="contacts-title">
+              <img src="img/hero/call.png" alt="call" class="icon-footer">
+                <a href="tle:380 (50) 969 30 85" class="contacts-link">380 (50) 969 30 85</a>
+            </span>
+            <span class="location footer-location">телефон для консультаций</span>
+          </div>
+         </div>
+         <div class="footer-socials">
+          <span class="nav-title">мы в соцсетях</span>
+          <div class="footer-icon">
+            <div class="social-fb"><a href="#" class="social-link"><img src="img/fb.png" alt=""></a></div>
+            <div class="social-telegram"><a href="#" class="social-link"><img src="img/telegram.png" alt=""></a></div>
+            <div class="social-instagram"><a href="#" class="social-link"><img src="img/instagram.png" alt=""></a></div>
+          </div>
+          <button class="btn" id="footer-modal">задать вопрос</button>
+        </div>
+      </div>
+      <!-- /.footer-wrap -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <div class="overlay"></div>
+  <div class="modal">
+    <div class="modal-dialog">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">Возникли вопросы?</h2>
+      <p class="modal-text">
+        Хотите получить детальную консультацию по возникшему у Вас вопросу? Заполните форму обратной связи и наш менеджер 
+        свяжется с Вами в ближайшее время!
+      </p>
+      <form action="#" class="modal-form" id="modalForm">
+        <div class="main-inputs">
+          <input type="text" name="username" class="input-review input-name" placeholder="Как вас зовут?">
+          <input type="text" name="email" class="input-review input-mail" placeholder="Контактный email">
+        </div>
+        <textarea wrap="hard" name="review" rows="10" cols="45" name="text" class="input-text" placeholder="Что конкретно Вас интересует?"></textarea>
+        <div class="chek-wrap">
+          <input class="chek-box" id="chek-box-modal" type="checkbox">
+          <label for="chek-box-modal" class="private">Даю согласие на обработку персональных данных</label>
+        </div>
+        <button class="modal-btn">отправить</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
