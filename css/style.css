@@ -1411,6 +1411,101 @@ label:hover {
   }
 }
 
+.container-contacts {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contacts-content {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-phone {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contacts-description_title {
+  font-family: 'Gilroy-Black', sans-serif;
+  font-weight: 400;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+.callme {
+  display: block;
+}
+
+.callme-mail {
+  color: #357CFF;
+}
+
+.callme-mail:hover {
+  text-decoration: underline;
+}
+
+.callme-social {
+  margin-right: 16px;
+}
+
+.indent {
+  margin-right: 104px;
+}
+
+.phone-numbers {
+  font-family: 'Gilroy-SemiBold', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 48px;
+}
+
+.map {
+  margin-right: 44px;
+}
+
+@media (max-width: 1264px) {
+  .container-contacts {
+    padding: 0 15px;
+  }
+  .phone-numbers {
+    font-size: 14px;
+  }
+  .contacts-description_title {
+    font-size: 24px;
+  }
+  .indent {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 974px) {
+  .contacts-content {
+    flex-direction: column-reverse;
+  }
+  .contacts-description {
+    width: 100%;
+  }
+  .map {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contacts-description_title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 340px) {
+  .contacts-phone {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 1439px) {
   .contacts-title {
     font-size: 16px;
